@@ -1,0 +1,149 @@
+*{
+    color: #ffffff;
+    margin: 0;
+    padding: 0.1%;
+    list-style: none;
+    font-size: larger;
+    text-decoration: none;
+}
+scrpit, title{display: none;}
+body{background-color: black;}
+section{
+    display: flex;
+    outline-style: solid;
+    outline-width: 1mm;
+    outline-color: #ffffff;
+    align-items: space-evenly;
+    flex-direction: column;
+    background-color: darkslateblue;
+    margin: 5%;
+}
+header{
+    height: 100%;
+    width: 80%;
+    margin: 5%;
+div{
+width: 80%;
+margin: 5%;
+background-color: gray;
+outline-style: solid;
+outline-width: 0.1cm;
+outline-color: #ffffff;
+}
+ul{margin: 1% 5%;}
+}
+main{
+    h1{
+        margin-left: 45%;
+        font-size: larger;
+    }
+    p{
+        margin: 1%;
+        font-size: large;
+        width: 55%;
+    }
+    div{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5%;
+    }
+    img{
+        width: 20%;
+        outline-style: solid;
+        outline-width: 0.1cm;
+        outline-color: #ffffff;
+        margin-left: 15%;
+    }
+}
+a{color: skyblue;}
+a:hover{color: blue;}
+.funny{color: orangered;}
+.funny:hover{color: yellow;}
+.between{
+    font-size: medium;
+    justify-content: space-between;
+    ul{
+        width: 50%;
+        margin: 1%;
+    }
+}
+/* Estilos para telas pequenas (ex.: smartphones) */
+@media (max-width: 468px) {
+    body{font-size: medium;}
+    section{
+        width: 100%;
+        margin: 0;
+        padding: auto;
+        outline-width: 0.5mm;
+    }
+    header{
+        width: 100%;
+        margin: 3%;
+        div {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    ul{
+        padding: 0;
+        text-align: center;
+    }
+    main{
+        h1{
+            font-size: 1.5em;
+            margin-left: 0;
+            text-align: center;
+        }
+        p{
+            width: 100%;
+            font-size: medium;
+            margin: 5% auto;
+        }
+        div{
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            width: 80%;
+            margin: 5% auto;
+        }
+    } 
+    .funny{font-size: 1.2em;}
+}
+
+/* Ajustes para tablets (entre 769px e 1024px de largura) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header{
+        width: 90%;
+        margin: 4%;
+        div {
+            width: 95%;
+            margin: 2% auto;
+        }
+    }
+    ul{
+        margin: 1% 3%;
+        text-align: center;
+    }
+    main{
+        h1{
+            font-size: 1.8em;
+            margin-left: 25%;
+        }
+        p{
+            width: 80%;
+            font-size: large;
+            margin: 2% auto;
+        }
+        div{
+            flex-direction: column;
+            align-items: center;
+            margin: 2% auto;
+        }
+        img{
+            width: 60%;
+            margin: 2% auto;
+        }
+    }
+    .funny{font-size: 1.3em;}
+}
